@@ -14,7 +14,9 @@ public class OptionalTestStaticValue {
          */
        String uName= Optional.ofNullable(userName).orElse("jimao");
        System.out.println(uName);
-
+        /**
+        * 拦截jimao
+        */
        Boolean f=Optional.ofNullable(userName).filter(s -> "jimao".equals(s)).isPresent();
        System.out.println(f);
     }
