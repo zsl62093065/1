@@ -1,6 +1,5 @@
 package Optional.serviceImpl;
 import java.util.Optional;
-import java.util.function.Consumer;
 
 /**
  * 判断空对象
