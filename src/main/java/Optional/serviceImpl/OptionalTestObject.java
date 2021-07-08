@@ -3,7 +3,7 @@ package Optional.serviceImpl;
 import java.util.Optional;
 
 /**
- * 代码优化
+ * 代码优化1
  */
 public class OptionalTestObject {
     public static void main(String[] args) {
@@ -13,7 +13,6 @@ public class OptionalTestObject {
          * of 不允许传递一个空值对象
          */
         Optional<String> optional=Optional.ofNullable(userName);
-
         boolean present=optional.isPresent();
         /**
          * false 返回false则不执行下面的方法
@@ -22,7 +21,6 @@ public class OptionalTestObject {
         if(present) {
             System.out.println(optional.get());
         }
-
         /**
          * userName不为空的情况下，直接调用accept打印值
          * userName为空的情况下，不会执行accept
@@ -43,5 +41,4 @@ public class OptionalTestObject {
         System.out.println("方法引入获取值");
         optional.ifPresent(System.out::print);
     }
-
 }
